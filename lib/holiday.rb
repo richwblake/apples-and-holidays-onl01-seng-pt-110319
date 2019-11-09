@@ -80,7 +80,10 @@ end
 
 def format_holiday_name ( holiday_name )
   formatted_name = holiday_name.to_s.capitalize
-  formatted_name.each_char { |character| character = " " if character == "_" }
+  count = 0
+  while count < formatted_name.length do
+    
+  end
   formatted_name
 end
 
