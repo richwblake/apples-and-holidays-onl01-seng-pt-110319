@@ -80,7 +80,7 @@ end
 
 def format_holiday_name ( holiday_name )
   formatted_name = holiday_name.to_s.capitalize
-  
+  formatted_name.each_char { |character|  }
 end
 
 def all_holidays_with_bbq(holiday_hash)
