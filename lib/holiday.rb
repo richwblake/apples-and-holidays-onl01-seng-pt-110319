@@ -82,7 +82,10 @@ def format_holiday_name ( holiday_name )
   formatted_name = holiday_name.to_s.capitalize
   count = 0
   while count < formatted_name.length do
-    formatted_name[count] = " " if formatted_name[count] == "_"
+    if formatted_name[count] == "_"
+      formatted_name[count] = " "
+      formatted_name[count + 1].upcase
+    end
     count += 1
   end
   formatted_name
