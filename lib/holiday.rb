@@ -83,6 +83,7 @@ def format_holiday_name ( holiday_name )
   count = 0
   while count < formatted_name.length do
     formatted_name[count] = " " if formatted_name[count] == "_"
+    count += 1
   end
   formatted_name
 end
