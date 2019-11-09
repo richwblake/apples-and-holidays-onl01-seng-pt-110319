@@ -97,7 +97,7 @@ def all_holidays_with_bbq(holiday_hash)
   names_to_return = Array.new
   holiday_hash.each_pair { |season, holiday_list|
     holiday_list.each_pair { |holiday_name, items|
-      names_to_return.push( holiday_name ) if 
+      names_to_return.push( holiday_name ) if items.include?( "BBQ" )
     } 
   }  
 end
