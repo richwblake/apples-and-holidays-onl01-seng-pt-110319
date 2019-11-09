@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.to_s.capitalize + ":"
     holiday_list.each_pair { |holiday_name, items|
       holiday_supplies = String.new
-      items.each { |item| pp item }
+      items.each { |item| puts items.find_index( item ) == 0 ? "found 0" : "not 0" }
       #puts "  " + holiday_name.to_s.capitalize + ": " + items[0]
     } 
   }  
