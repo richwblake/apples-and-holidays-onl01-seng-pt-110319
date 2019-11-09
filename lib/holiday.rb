@@ -100,6 +100,7 @@ def all_holidays_with_bbq(holiday_hash)
       names_to_return.push( holiday_name ) if items.include?( "BBQ" )
     } 
   }  
+  names_to_return
 end
 
 
